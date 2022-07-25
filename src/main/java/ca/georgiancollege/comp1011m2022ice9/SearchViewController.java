@@ -34,6 +34,14 @@ public class SearchViewController implements Initializable
             // movie was not found - maybe output to a message label of some kind
         }
     }
+
+    @FXML
+    void searchTextFieldSubmitted(ActionEvent event)
+    {
+        searchButtonClicked(event);
+        resultsListView.requestFocus();
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
