@@ -26,7 +26,7 @@ public class APIManager
     public Movie getMovieFromOMDBByTitleAndYear(String title, String year)
     {
         // Step 1. Construct your URL
-        String APIKey = "769bf72f";
+        String APIKey = "8db3c11a";
         title = title.replace(" ", "%20");
         String URL = "https://www.omdbapi.com/?apikey=" + APIKey + "&t=" + title + "&y=" + year;
 
@@ -54,7 +54,7 @@ public class APIManager
     public MovieSearchResults getMovieFromOMDBBySearchTerm(String searchTerm)
     {
         // Step 1. Construct your URL
-        String APIKey = "769bf72f";
+        String APIKey = "8db3c11a";
         searchTerm = searchTerm.replace(" ", "%20");
         String URL = "https://www.omdbapi.com/?apikey=" + APIKey + "&s=" + searchTerm;
 
@@ -86,7 +86,7 @@ public class APIManager
     public Movie getMovieFromOMDBByID(String imdbID)
     {
         // Step 1. Construct your URL
-        String APIKey = "769bf72f";
+        String APIKey = "8db3c11a";
         String URL = "https://www.omdbapi.com/?apikey=" + APIKey + "&i=" + imdbID;
 
         // Step 2. Create a Client Object
